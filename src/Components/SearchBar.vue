@@ -9,8 +9,8 @@ export default {
   name: 'SearchBar',
   methods: {
       onInput: function (event) {
-          console.log(event.target.value)
-      }
+this.$emit('termChange', event.target.value)
+}
   }
 };
 </script>
